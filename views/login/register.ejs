@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <% include ../common.ejs%>
+</head>
+
+<body>
+    <div id="wrapper">
+        <form action="" class="form-login" method="post">
+            <div class="header">
+                <a href="/" class="link-head-left"><i class="icon-home"></i></a>
+                <span>注册</span>
+                <a href="javascript:void(0);" tabindex="1" class="link-head-right main-item"><i class="icon-config"></i></a>
+                <div class="config-box">
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="/static/images/avatar.png" alt="">
+            </div>
+            <div class="inputs">
+                <input name="username" type="text" placeholder="请输入账号" class="username"  autocomplete="off" />
+                <div class="error hd">请输入正确的帐号</div>
+                <input name="email" type="email" placeholder="请输入Email" class="email"  autocomplete="off" />
+                <div class="error hd">请输入正确的邮箱</div>
+                <input name="password" type="password"  placeholder="请输入密码" class="password" autocomplete="off"  />
+                <div class="error hd">请输入正确的密码</div>
+                <input name="passwd" type="password"  placeholder="再次输入密码" class="repeat-pwd"  autocomplete="off" />
+                <div class="error hd">两次密码不一致</div>
+            </div>
+            <div class="link-1">
+                <input type="checkbox" id="c2" name="cc" checked="checked" />
+                <label for="c2"><span></span> 同意服务条款?</label>
+            </div>
+            <div class="clear"></div>
+            <div class="button-login container">
+                <a href="javascript:;" id="registerBtn">注册</a>
+            </div>
+        </form>
+        <div class="clear">
+        </div>
+    </div>
+    <% include ../footer.ejs%>
+</body>
+
+</html>
